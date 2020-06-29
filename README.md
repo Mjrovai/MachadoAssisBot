@@ -1,4 +1,4 @@
-# machadoAssisBot
+# Machado de Assis Bot
 Portuguese Text Generation with Artificial Neural Networks
 
 <img src = "MachadoAssisBot.png">
