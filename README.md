@@ -4,12 +4,12 @@ Portuguese Text Generation with Artificial Neural Networks
 <img src = "MachadoAssisBot.png">
 
 - Project developed by Marcelo Rovai, based on lessons learned with the great teacher [José Portilla](https://www.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/#instructor-1) during his fantastic course: [Complete Tensorflow 2 and Keras Deep Learning Bootcamp](https://www.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/#instructor-1)
-- The Artificial network developed on this project, generates text, character by character. Please see this following site, for a great general visual explanation: [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) and also check the [TF site for details](https://github.com/tensorflow/docs/blob/master/site/en/tutorials/text/text_generation.ipynb). 
+- The artificial neural network developed for this project generates text character by character. Please see the following site for an extraordinary general visual explanation from Andrej Karpathy, [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/).
 
 ## Introduction
 What would happen if a robot learned from the great Machado de Assis and started to write short stories? I said learn, not plagiarize or copy random excerpts!
 
-The writer robot (an Artificial Intelligence), is a Recurrent Neural network (RNN - GRU) of 3 levels, with 1,207 neurons (64 - 1,026 - 117). A total of 3.5 million parameters have been trained repeatedly 30 times (Epochs), to obtain the final AI model. I trained the model using Python / Tensorflow2.0 / Keras
+The writer robot is a Recurrent Neural network (RNN - GRU) with 3 layers (256 - 1,024 - 117). Around 4 million parameters have been trained repeatedly 50 times (Epochs) to obtain the final AI model (trained the model using Python / Tensorflow2.x / Keras).
 
 Ah! Most importantly, the training was based on seven original Machado books downloaded from the Gutenberg Project:
 
@@ -21,10 +21,10 @@ Ah! Most importantly, the training was based on seven original Machado books dow
 - Esau e Jacob,
 - Memorial de Ayres
 
-From the corpus formed by these seven books, the model was trained with 2.5 million characters as input, separated into groups of 120 characters (more or less an average paragraph size).
+From the corpus formed by these seven books, the model was trained with 2.5 million characters as input, separated into groups of 150 characters (more or less an average paragraph size).
 
 Note that the model can create names with capital letters, start paragraphs with capital letters, and end with punctuation. Create chapters, dialogs, etc. I couldn't say if all the characters are real (I didn't check), but the robot likely could have invented some.
-The model is simple, so, logically, when reading the text, it is cleared observed that it has no sense, but surely it has the "sent of Machado" ;-)
+The model is simple, so, logically, when reading the text, it is clearly observed that it has no sense, but indeed it has the "sent of Machado" ;-)
 
 It would be something like this ...
 
